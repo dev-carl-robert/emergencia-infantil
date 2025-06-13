@@ -1,0 +1,17 @@
+@media (max-width: 576px) {
+    .sombra-topo {
+        height: 20%;
+    }
+    .apresentacao {
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+    }
+    .left, .right {
+        margin-top: 5rem;
+        width: 100%;
+    }
+    .right img {
+        display: none;
+    }
+}
