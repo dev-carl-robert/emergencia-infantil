@@ -38,7 +38,7 @@
                     anônima, segura e acessível.<br>
                     Toque, envie, ajude.<br>
                     Denuncie. Proteja. Salve uma infância.</h2>
-                <a href="/" class="btn-denunciar">Quero denunciar</a>
+                <a href="#denuncia" class="btn-denunciar">Quero denunciar</a>
             </div>
             <div class="right">
                 <img src="./src/Proteja.jpg" alt="">
@@ -52,7 +52,7 @@
 
         <section class="info-direitos">
             <h3>👶 Direitos da Criança</h3>
-            <p>Toda criança tem direito à proteção, amor, saúde, educação e segurança.</p>    
+            <p>Toda criança tem direito à proteção, amor, saúde, educação e segurança.</p>
             <ul class="direito-lista">
                 <div>
                     <li>🛡️ Proteção</li>
@@ -64,7 +64,7 @@
                     <li>📚 Educação</li>
                     <li>🏠 Segurança</li>
                 </div>
-            </ul>    
+            </ul>
             <h4>📞 Denúncias ou informações: Disque 100</h4>
         </section>
 
@@ -72,16 +72,44 @@
             <h3>⚡ Ajuda Rápida</h3>
             <ul>
                 <li><a href="tel:100">📞 Disque 100 (Denúncia Nacional)</a></li>
+                <p>O Disque 100 é um canal gratuito e confidencial do Governo Federal para denúncias de violações de
+                    direitos humanos. Atende 24 horas por dia, todos os dias da semana, incluindo feriados. Qualquer
+                    pessoa pode ligar de qualquer telefone fixo ou celular, sem custo, discando 100.</p>
                 <li><a href="https://wa.me/SEU_NUMERO">📱 Conselho Tutelar (WhatsApp)</a></li>
+                <p>O Conselho Tutelar é responsável por zelar pelos direitos de crianças e adolescentes. Muitos
+                    Conselhos Tutelares disponibilizam atendimento via WhatsApp para facilitar o contato da população.
+                    Os números de WhatsApp podem variar conforme a localidade</p>
                 <li><a href="tel:190">🚨 Polícia Militar (190)</a></li>
+                <p>O número 190 é o canal de emergência da Polícia Militar, disponível gratuitamente em todo o
+                    território nacional. Deve ser acionado em situações que requerem intervenção policial imediata, como
+                    crimes em andamento, acidentes graves ou outras emergências.</p>
             </ul>
         </section>
 
     </main>
+    <section id="denuncia">
+  <h2>ProtejaJA</h2>
+  <h4>Sua Denúncia será anônima e salvará uma infância</h4>
+  <div class="formulario-denuncia">
+    <form id="denunciaForm"
+          action="https://formsubmit.co/robertcabral30@gmail.com"
+          method="POST">
+      <input type="text" name="nome" placeholder="Seu Nome (opcional)">
+      <input type="email" name="email" placeholder="Seu Email (opcional)">
+      <input type="hidden" id="lat" name="latitude">
+      <input type="hidden" id="lng" name="longitude">
+      <input type="text" id="localizacaoVisivel" required placeholder="Localização da Criança (obrigatório)">
+      <textarea name="descricao" rows="4" placeholder="Descrição da Situação"></textarea>
+      <button class="botao" type="submit">Enviar Denúncia</button>
+    </form>
+  </div>
+</section>
     <footer>
-        <p>&copy; 2025 ProtejaJá - Projeto de Extensão | ADS</p>
-        <p><a href="#privacidade">Política de Privacidade</a></p>
+        <p>&copy; 2025 ProtejaJá - Projeto de Extensão | ADS </p>
+        <p> <a href="#privacidade"> Política de Privacidade</a></p>
     </footer>
+    <script src="./script.js"></script>
 </body>
+
 
 </html>
